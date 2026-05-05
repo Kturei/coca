@@ -1,25 +1,3 @@
 @import './mixins';
-
-header {
-  @include flex-column-all-center;
-
-  @include small-desktop {
-    color: red;
-  }
-  
-  @include tablet {
-    color: blue;
-  }
-
-  @include small-tablet {
-    color: green;
-  }
-
-  @include mobile {
-    color: yellow;
-  }
-
-  @include small-mobile {
-    color: tan;
-  }
-}
+@import './base';
+@import './globals';
