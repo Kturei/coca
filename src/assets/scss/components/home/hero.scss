@@ -7,7 +7,7 @@
   }
 
   @include mobile {
-    min-height: calc(100dvh - 128px);
+    min-height: calc(100dvh - 109px);
   }
 
   &::before {
@@ -75,7 +75,9 @@
   }
 
   &__left {
-    max-width: 580px;
+    @include mini-desktop {
+      max-width: 617px;
+    }
   }
 
   &__title {
@@ -87,27 +89,38 @@
     color: var(--neutral-color-100);
 
     @include mini-desktop {
-      margin-bottom: 74px;
+      margin-bottom: 94px;
     }
 
     @include tablet {
-      margin-bottom: 44px;
+      margin-bottom: 64px;
       font-size: 60px;
     }
 
     @include mobile {
-      margin-bottom: 38px;
+      margin-bottom: 58px;
       font-size: 48px;
     }
 
     @include small-mobile {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       font-size: 38px;
     }
   }
 
   &__subtitle {
+    justify-content: center;
     margin-bottom: 69px;
+
+    @include tablet {
+      margin-bottom: 49px;
+    }
+
+    &__br {
+      @include mini-desktop {
+        display: none;
+      }
+    }
   }
 
   &__form {
@@ -238,7 +251,8 @@
     }
 
     &-body {
-      &-th {
+      &-td {
+        white-space: nowrap;
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
