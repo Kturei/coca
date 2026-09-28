@@ -135,6 +135,9 @@
     @include mobile {
       margin-bottom: 20px;
     }
+    @include small-mobile {
+      text-align: center;
+    }
   }
 
   &__descr {
@@ -146,6 +149,9 @@
 
     @include mini-desktop {
       max-width: 700px;
+    }
+    @include small-mobile {
+      text-align: center;
     }
   }
 
